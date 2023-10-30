@@ -5,17 +5,18 @@ function Banner() {
   return (
     <div className='banner'>
         <div className='banner-content'>
-            <div className='heading'>
-                <img className='heading-logo' src="./assets/banner-logo.png" alt=""/>
-                <h4>SERIES</h4><br/>
-                <h1>MONEY HEIST</h1>
-                
-
+            <div className='banner-title-content'>
+                <img className='banner-title-logo' src="./assets/banner-logo.png" alt=""/>
+                <h4 className='banner-title'>SERIES</h4>
             </div>
-            <div className='banner-description'>
+            <div className='banner-heading-content'>
+                <h1 className='banner-heading'>MONEY HEIST</h1>
+                <p className='banner-description'>Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan</p>
 
             </div>
             <div className='buttons'>
+                <button className='button'>Play</button>
+                <button className='button'>More info</button>
 
             </div>
 
