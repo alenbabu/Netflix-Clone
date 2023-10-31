@@ -1,0 +1,22 @@
+.row{
+    color: white;
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+}
+
+.posters{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+
+.poster{
+    width: 35vh;
+    height: 35vh;
+    margin-top: 0.5em;
+    margin: 0.3em;
+}
