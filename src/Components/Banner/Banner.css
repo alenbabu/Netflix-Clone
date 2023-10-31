@@ -4,13 +4,14 @@
     background-image: url('/public/assets/banner.jpg');
     background-size: cover;
     background-position: center;
-    -webkit-box-shadow: inset 60px -28px 48px 40px rgba(0, 0, 0, 0.89);
-    box-shadow: inset 30px -28px 70px 30px rgba(0, 0, 0, 0.89);
+    -webkit-box-shadow: inset 10px -28px 48px 30px rgba(0,0,0,0.89); 
+    box-shadow: inset 10px -28px 48px 30px rgba(0,0,0,0.89);
+    
 }
 
 .banner-content {
     width: 40%;
-    height: 50vh;
+    height: 55vh;
     margin-left: 3.2em;
     position: absolute;
     top: 50%;
@@ -59,15 +60,24 @@
 
 }
 
-.buttons {
+.banner-buttons {
     padding: 3em;
 }
 
 .button{
     margin-left: 3em;
-    width: 5em;
-    height: 2em;
-    border-radius: 5px;
+    width: 5.5em;
+    height: 2.5em;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
     outline: none;
     border: none;
+    background-color: rgba(87, 84, 84, 0.5);
+}
+
+.button:hover{
+    color: black;
+    background-color: #e6e6e6;
+    cursor: pointer;
 }
