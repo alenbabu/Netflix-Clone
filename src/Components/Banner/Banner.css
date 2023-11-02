@@ -1,21 +1,17 @@
 .banner {
     width: 100%;
-    height: 86vh;
-    background-image: url("banner.jpg");
+    height: 70%;
     background-size: cover;
     background-position: center;
     display: flex;
-
-    /* -webkit-box-shadow: inset 10px -28px 48px 30px rgba(0,0,0,0.89); 
-    box-shadow: inset 10px -28px 48px 30px rgba(0,0,0,0.89); */
 }
 
 .banner-content {
-    width: 40%;
-    height: 50vh;
+    width: 45%;
+    height: 45vh;
     margin-left: 3.2em;
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translate(0, -50%);
     display: flex;
     flex-direction: column;
@@ -57,12 +53,14 @@
 .banner-description {
     margin-top: 2em;
     color: #B3B4BF;
+    font-size: .9em;
     font-family: 'Roboto', sans-serif;
 
 }
 
 .banner-buttons {
-    padding: 2.5em;
+    margin-left: 2em;
+    padding-top: 2em;
 }
 
 .button{
@@ -85,6 +83,6 @@
 
 .fade-bottom{ 
     width: 100%;
-    height: 86vh;
+    height: 70vh;
     background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.45),#111);
 }
