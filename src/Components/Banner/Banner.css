@@ -1,17 +1,18 @@
 .banner {
     width: 100%;
     height: 86vh;
-    background-image: url('/public/assets/banner.jpg');
+    background-image: url("banner.jpg");
     background-size: cover;
     background-position: center;
-    -webkit-box-shadow: inset 10px -28px 48px 30px rgba(0,0,0,0.89); 
-    box-shadow: inset 10px -28px 48px 30px rgba(0,0,0,0.89);
-    
+    display: flex;
+
+    /* -webkit-box-shadow: inset 10px -28px 48px 30px rgba(0,0,0,0.89); 
+    box-shadow: inset 10px -28px 48px 30px rgba(0,0,0,0.89); */
 }
 
 .banner-content {
     width: 40%;
-    height: 55vh;
+    height: 50vh;
     margin-left: 3.2em;
     position: absolute;
     top: 50%;
@@ -61,11 +62,11 @@
 }
 
 .banner-buttons {
-    padding: 3em;
+    padding: 2.5em;
 }
 
 .button{
-    margin-left: 3em;
+    margin-left: 4em;
     width: 5.5em;
     height: 2.5em;
     color: white;
@@ -80,4 +81,10 @@
     color: black;
     background-color: #e6e6e6;
     cursor: pointer;
+}
+
+.fade-bottom{ 
+    width: 100%;
+    height: 86vh;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.45),#111);
 }
