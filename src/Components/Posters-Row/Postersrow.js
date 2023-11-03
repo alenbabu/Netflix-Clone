@@ -19,7 +19,7 @@ function Postersrow(props) {
             <h2>{props.title}</h2>
             <div className='posters'>
                 {
-                    poster.map((obj)=><img className='poster' src={`${imageUrl+obj.poster_path}`} alt='' />
+                    poster.map((obj)=><img className={props.isSmall ? 'smallposter' :'poster'} src={`${imageUrl+obj.backdrop_path}`} alt='' />
 
                     )
                 }

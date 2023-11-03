@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <Navbar/>
       <Banner/>
-      <Postersrow url={originals} title='Netflix Originals'/>
-      <Postersrow url={actions} title='Action'/>
-      <Postersrow url={romance} title='Romance'/>
+      <Postersrow url={originals} title='Netflix Originals' isSmall={false}/>
+      <Postersrow url={actions}  title='Action' isSmall />
+      <Postersrow url={romance}  title='Romance' isSmall />
 
     </div>
   );

@@ -1,21 +1,31 @@
-.row{
+.row {
     color: white;
     margin-left: 1.5em;
 }
 
-.posters{
+.posters {
     display: flex;
     overflow-x: scroll;
 }
 
-.posters::-webkit-scrollbar{
+.posters::-webkit-scrollbar {
     display: none;
 }
 
 
 .poster{
-    width: 35vh;
-    height: 35vh;
+    max-width: 40vw;
+    max-height: 40vh;
     margin-top: 0.5em;
     margin: 0.3em;
+
+}
+
+.smallposter{
+
+    max-width: 20vw;
+    max-height: 20vw;
+    margin-top: 0.5em;
+    margin: 0.3em;
+
 }
