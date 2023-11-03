@@ -1,26 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './postersrow.css'
+import axios from '../../constants/axios';
+import { imageUrl } from '../../constants/constants';
 
-function Postersrow() {
+function Postersrow(props) {
+    const [poster, setPoster] = useState([]);
+    
+    useEffect(() => {
+        axios.get(props.url).then((Response)=>{
+            console.log(Response.data);
+            setPoster(Response.data.results)
+            
+        })     
+    }, []);
+    
     return (
         <div className='row'>
-            <h2>Title</h2>
+            <h2>{props.title}</h2>
             <div className='posters'>
-                <img className='poster' src='./assets/stranger-things-netflix-poster-wallpaper-preview.jpg' alt='' />
-                <img className='poster' src='./assets/Ec_7SzOUEAAuGit.jpeg' alt='' />
-                <img className='poster' src='./assets/stranger-things-netflix-poster-wallpaper-preview.jpg' alt='' />
-                <img className='poster' src='./assets/Ec_7SzOUEAAuGit.jpeg' alt='' />
-                <img className='poster' src='./assets/stranger-things-netflix-poster-wallpaper-preview.jpg' alt='' />
-                <img className='poster' src='./assets/Ec_7SzOUEAAuGit.jpeg' alt='' />
-                <img className='poster' src='./assets/stranger-things-netflix-poster-wallpaper-preview.jpg' alt='' />
-                <img className='poster' src='./assets/Ec_7SzOUEAAuGit.jpeg' alt='' />
-                <img className='poster' src='./assets/stranger-things-netflix-poster-wallpaper-preview.jpg' alt='' />
-                <img className='poster' src='./assets/Ec_7SzOUEAAuGit.jpeg' alt='' />
-                <img className='poster' src='./assets/stranger-things-netflix-poster-wallpaper-preview.jpg' alt='' />
-                <img className='poster' src='./assets/Ec_7SzOUEAAuGit.jpeg' alt='' />
-                <img className='poster' src='./assets/stranger-things-netflix-poster-wallpaper-preview.jpg' alt='' />
-                <img className='poster' src='./assets/Ec_7SzOUEAAuGit.jpeg' alt='' />
+                {
+                    poster.map((obj)=><img className='poster' src={`${imageUrl+obj.poster_path}`} alt='' />
 
+                    )
+                }
+        
             </div>
 
         </div>

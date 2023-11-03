@@ -5,11 +5,10 @@ import { API_KEY } from '../../constants/constants';
 import { imageUrl } from '../../constants/constants';
 
 function Banner() {
-    const [film, setFilm] = useState();
+    const [film, setFilm] = useState([]);
     
     useEffect(() => {
       axios.get(`/movie/now_playing?api_key=${API_KEY}&language=en-US&page=1`).then((Response)=>{
-        console.log(Response.data);
         setFilm(Response.data.results[Math.floor(Math.random()*21)])
       })
     }, []);
