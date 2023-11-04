@@ -18,6 +18,13 @@
     align-items: flex-start;
 }
 
+@media only screen and (max-width: 800px) {
+    .banner-content{
+        top: 38%;
+        width:70%;
+    }
+  }
+
 .banner-title-content {
     width: 70%;
     height: 7vh;
@@ -62,6 +69,12 @@
     margin-left: 2em;
     padding-top: 2em;
 }
+
+@media only screen and (max-width: 800px) {
+    .banner-buttons{
+        padding-top: 0.5em;
+    }
+  }
 
 .button{
     margin-left: 4em;
