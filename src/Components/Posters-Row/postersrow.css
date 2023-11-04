@@ -18,14 +18,18 @@
     max-height: 40vh;
     margin-top: 0.5em;
     margin: 0.3em;
+    cursor: pointer;
+    transition: 0.6s;
+}
 
+.poster:hover{
+    transform: scale(1.1);
 }
 
 .smallposter{
-
     max-width: 20vw;
     max-height: 20vw;
     margin-top: 0.5em;
     margin: 0.3em;
-
+    cursor: pointer;
 }
